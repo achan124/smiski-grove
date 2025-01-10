@@ -13,8 +13,6 @@ export function LoginPage() {
     event.preventDefault(); // Prevent form submission from refreshing the page
     setErrorMessage(''); // Clear any previous error messages
 
-
-
     try {
       // Use Firebase to authenticate the user
       await signInWithEmailAndPassword(auth, email, password);

@@ -19,7 +19,6 @@ export function NavBar({ username }) {
                         <span className="hamburger-line"></span>
                     </div>
 
-
                     {/* <div > */}
                         <ul id="nav-links" className={isMenuOpen ? 'menu-open' : 'menu-closed'}>
                             <li><NavLink to="/home" onClick={() => setIsMenuOpen(false)} >Home</NavLink></li>

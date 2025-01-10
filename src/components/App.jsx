@@ -70,15 +70,12 @@ export default function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/search" element={<SearchPage smiskiImg={SMISKI_IMAGES} onAddToWishlist={handleAddToWishlist} onAddToCollection={handleAddToCollection}/>} />
+        <Route path="/mySmiskis" element={<MySmiskisPages wishlist={wishlist} collection={collection} removeFromWishlist={handleRemoveFromWishlist} removeFromCollection={handleRemoveFromCollection}/>} />
+        <Route path="/memoryMatch" element={<MemoryMatch setGameStats={setGameStats}/>} />
+        <Route path="/oddOneOut" element={<OddOneOut setGameStats={setGameStats} />} />
         
         <Route element={<ProtectedPage currentUser={currentUser} />}>
           <Route path="/profile" element={<ProfilePage currentUser={currentUser} gameStats={gameStats}/>} />
-          <Route
-            path="/mySmiskis"
-            element={<MySmiskisPages wishlist={wishlist} collection={collection} removeFromWishlist={handleRemoveFromWishlist} removeFromCollection={handleRemoveFromCollection}/>}
-          />
-          <Route path="/memoryMatch" element={<MemoryMatch setGameStats={setGameStats}/>} />
-          <Route path="/oddOneOut" element={<OddOneOut setGameStats={setGameStats} />} />
         </Route>
       </Routes>
       <Footer />
