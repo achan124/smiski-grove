@@ -167,7 +167,7 @@ export default function MemoryMatch({ setGameStats }) {
   return (
     <div>
       <header>
-        <h1 className="mt-5 pt-5">Memory Match</h1>
+        <h1>Memory Match</h1>
         <div className="game-settings">
           <div className="level-buttons">
             <button

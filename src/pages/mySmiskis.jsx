@@ -6,24 +6,25 @@ export function MySmiskisPages({ wishlist, collection, removeFromWishlist, remov
     const renderSmiskis = (items, removeHandler, emptyMessage) => (
         items.length > 0 ? (
             items.map(item => (
-                <div className="col-md-6 col-xl-3 d-flex" key={item.id}>
+                <div className="col-6 col-md-6 col-xl-3 d-flex" key={item.id}>
                     <div className="card mb-4 w-100">
-                        <div className="card-body flex-fill">
-                            <div className="row">
-                                <div className="col-sm-auto col-md-6 col-xl-12">
-                                    <img className="img-fluid pb-3 wishlist-img" src={item.img} alt={item.alt} />
-                                </div>
-                                <div className="col-sm">
-                                    <div>
-                                        <h2 className="card-title">{item.name}</h2>
-                                        <p>{item.series}</p>
-                                    </div>
-                                    <div className="card-add">
-                                        <button className="btn wishlist-remove" onClick={() => removeHandler(item.name)}>{activeTab === 'wishlist' ? 'Remove from Wishlist' : 'Remove from Collection'}</button>
-                                    </div>
-                                </div>
+
+                        <div className="card-body d-flex flex-column">
+
+                            <div className="col-sm-auto col-md-6 col-xl-8 m-auto">
+                                <img className="img-fluid pb-3" src={item.img} alt={item.alt} />
                             </div>
+
+                            <div>
+                                <h2 className="card-title">{item.name}</h2>
+                                <p>{item.series}</p>
+                            </div>
+                            <div className="card-add">
+                                <button className="btn wishlist-remove" onClick={() => removeHandler(item.name)}>{activeTab === 'wishlist' ? 'Remove from Wishlist' : 'Remove from Collection'}</button>
+                            </div>
+
                         </div>
+
                     </div>
                 </div>
             ))
@@ -37,7 +38,7 @@ export function MySmiskisPages({ wishlist, collection, removeFromWishlist, remov
     return (
         <div className="wishlist-content">
             <header>
-                <h1 className="my-5 pt-5">My Smiskis</h1>
+                <h1>My Smiskis</h1>
             </header>
 
             <div className="wishlist-tabs">

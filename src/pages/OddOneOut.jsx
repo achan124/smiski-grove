@@ -135,7 +135,7 @@ export function OddOneOut({ setGameStats }) {
   return (
     <div className="page-container">
       <header>
-        <h1 className="mt-5 pt-5">Odd One Out</h1>
+        <h1>Odd One Out</h1>
         <div className="game-settings">
           <div className="level-buttons">
             <button
@@ -164,7 +164,7 @@ export function OddOneOut({ setGameStats }) {
       {showStartPopup && (
         <div className="start-popup" onClick={handleStartClick}>
           <div className="start-popup-content">
-            <h2>Click to Start</h2>
+            <h2 className="text-light">Click to Start</h2>
           </div>
         </div>
       )}
