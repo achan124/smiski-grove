@@ -62,7 +62,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="container-fluid d-flex flex-column">
+    <div className="container-fluid d-flex flex-column my-5 pt-5">
       <NavBar username={currentUser?.userName || 'Guest'} />
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />

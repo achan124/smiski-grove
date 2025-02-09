@@ -30,6 +30,15 @@ h1 {
   margin-bottom: 1rem;
 }
 
+h2 {
+  font-size: 2rem;
+  color: #79A07D;
+  /* -webkit-text-stroke: #79A07D 3px; */
+  /* paint-order: stroke fill; */
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+
 .primary-button {
   margin-top: 50px;
   background-color: #B0DAB3;
@@ -85,6 +94,10 @@ nav ul {
 .profile-link {
   display: inline-block;
   text-decoration: none;
+}
+
+.searchForm {
+  width: 500px;
 }
 
 /* MENU */
@@ -383,14 +396,14 @@ footer {
 /* .search-button:hover {
   display:block;
 } */
-.advanced-search-expand {
+/* .advanced-search-expand {
   display: block;
   margin-top: 15;
   padding:10;
   border: 2px solid #48614A;
   border-radius: 5px;
   background-color: #95a18e90;
-}
+} */
 
 
 /* GAME CSS */
